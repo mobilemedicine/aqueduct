@@ -240,6 +240,8 @@ class PostgreSQLSchemaGenerator {
         break;
       case "string":
         return "TEXT";
+      case "ciString":
+        return "CITEXT";
       case "datetime":
         return "TIMESTAMP";
       case "boolean":
