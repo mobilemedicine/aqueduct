@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:aqueduct/src/openapi/openapi.dart';
 
+import '../../aqueduct.dart';
 import '../db/db.dart';
 import 'http.dart';
 
@@ -443,6 +444,7 @@ class ManagedObjectController<InstanceType extends ManagedObject>
 
     try {
       switch (desc.type.kind) {
+        case ManagedPropertyType.ciString:
         case ManagedPropertyType.string:
           return value;
         case ManagedPropertyType.bigInteger:

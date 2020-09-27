@@ -12,6 +12,9 @@ enum ManagedPropertyType {
 
   /// Represented by instances of [String].
   string,
+  
+  /// Represented by instances of [String].
+  ciString,
 
   /// Represented by instances of [DateTime].
   datetime,
@@ -88,6 +91,7 @@ class ManagedType {
         return dartValue is List<dynamic>;
       case ManagedPropertyType.document:
         return dartValue is Document;
+      case ManagedPropertyType.ciString:
       case ManagedPropertyType.string:
         {
           if (enumerationMap != null) {

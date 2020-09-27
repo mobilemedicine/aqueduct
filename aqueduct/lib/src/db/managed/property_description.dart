@@ -118,6 +118,7 @@ abstract class ManagedPropertyDescription {
         return APISchemaObject.integer();
       case ManagedPropertyType.doublePrecision:
         return APISchemaObject.number();
+      case ManagedPropertyType.ciString:
       case ManagedPropertyType.string:
         return APISchemaObject.string();
       case ManagedPropertyType.datetime:

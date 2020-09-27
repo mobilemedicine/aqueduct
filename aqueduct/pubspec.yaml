@@ -17,7 +17,9 @@ dependencies:
   open_api: ^2.0.1
   password_hash: ^2.0.0
   path: ^1.6.1
-  postgres: ^2.1.1
+  postgres: 
+    git:
+      url: https://github.com/mobilemedicine/postgresql-dart
   pub_cache: '>=0.2.0 <0.3.0'
   pub_semver: ^1.4.0
   safe_config: ^3.0.0-b2

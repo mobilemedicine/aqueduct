@@ -171,6 +171,8 @@ class SchemaColumn {
         return "datetime";
       case ManagedPropertyType.string:
         return "string";
+      case ManagedPropertyType.ciString:
+        return "ciString";
       case ManagedPropertyType.list:
         return null;
       case ManagedPropertyType.map:
@@ -196,6 +198,8 @@ class SchemaColumn {
         return ManagedPropertyType.datetime;
       case "string":
         return ManagedPropertyType.string;
+      case "ciString":
+        return ManagedPropertyType.ciString;
       case "document":
         return ManagedPropertyType.document;
     }
