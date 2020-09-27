@@ -61,6 +61,7 @@ class ColumnBuilder extends Returnable {
     ManagedPropertyType.integer: PostgreSQLDataType.integer,
     ManagedPropertyType.bigInteger: PostgreSQLDataType.bigInteger,
     ManagedPropertyType.string: PostgreSQLDataType.text,
+    ManagedPropertyType.ciString: PostgreSQLDataType.citext,
     ManagedPropertyType.datetime: PostgreSQLDataType.timestampWithoutTimezone,
     ManagedPropertyType.boolean: PostgreSQLDataType.boolean,
     ManagedPropertyType.doublePrecision: PostgreSQLDataType.double,
