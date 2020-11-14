@@ -1,5 +1,5 @@
 name: aqueduct
-version: 4.0.0-b1
+version: 4.0.0-b1-mobilemed
 description: A modern HTTP server application framework, ORM and OAuth2 provider with OpenAPI 3.0 integration. Foundation for REST, RPC or GraphQL services.
 homepage: https://aqueduct.io
 documentation:
@@ -9,7 +9,7 @@ environment:
 
 dependencies:
   args: ^1.5.0
-  analyzer: '>=0.39.4 <0.50.0'
+  analyzer: '>=0.39.4 <0.41.0'
   crypto: ^2.0.6
   logging: ^0.11.3
   isolate_executor: ^2.0.0
