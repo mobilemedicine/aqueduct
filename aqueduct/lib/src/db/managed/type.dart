@@ -1,5 +1,6 @@
 import 'package:aqueduct/src/db/managed/document.dart';
 
+import '../../../aqueduct.dart';
 import 'managed.dart';
 
 /// Possible data types for [ManagedEntity] attributes.
@@ -12,7 +13,7 @@ enum ManagedPropertyType {
 
   /// Represented by instances of [String].
   string,
-  
+
   /// Represented by instances of [String].
   ciString,
 
@@ -118,6 +119,8 @@ class ManagedType {
   static ManagedPropertyType get bigInteger => ManagedPropertyType.bigInteger;
 
   static ManagedPropertyType get string => ManagedPropertyType.string;
+
+  static ManagedPropertyType get ciString => ManagedPropertyType.ciString;
 
   static ManagedPropertyType get datetime => ManagedPropertyType.datetime;
 
